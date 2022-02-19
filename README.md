@@ -3,15 +3,19 @@
 # ClickHouse NodeJS URL Engine
 This basic example illustrates a simple NodeJS [URL Table Engine](https://clickhouse.com/docs/en/engines/table-engines/special/url/) server for Clickhouse
 
+##### Features
+- [x] INSERT to JS array
+- [x] SELECT from JS array
+
 #### Setup
-Install and run the example server
+Install and run the example service :
 ```
 npm install
 npm start
 ```
 
 #### 📦 Clickhouse
-Create a URL Engine table pointed at our service:
+Create a `url_engine_table` table pointed at our service :
 ```sql
 CREATE TABLE url_engine_node
 (
