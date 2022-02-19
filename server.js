@@ -1,7 +1,7 @@
 /** CLICKHOUSE URL Table Engine handler */
 
 const fastify = require('fastify')({ logger: true })
-var memory = [];
+var memory = []; // our fake memory storage
 
 /** CLICKHOUSE URL SELECT */
 fastify.get('/', async (request, reply) => {
