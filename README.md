@@ -5,6 +5,10 @@ This basic example illustrates a simple NodeJS URL Engine server for Clickhouse
 
 #### Setup
 Install and run the example server
+```
+npm install
+npm start
+```
 
 #### Clickhouse
 Create a URL Engine table pointed at our service:
