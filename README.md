@@ -1,7 +1,7 @@
 <img src="https://user-images.githubusercontent.com/1423657/147935343-598c7dfd-1412-4bad-9ac6-636994810443.png" width=220 >
 
 # ClickHouse NodeJS URL Engine
-This basic example illustrates a simple NodeJS URL Engine server for Clickhouse
+This basic example illustrates a simple NodeJS [URL Table Engine](https://clickhouse.com/docs/en/engines/table-engines/special/url/) server for Clickhouse
 
 #### Setup
 Install and run the example server
