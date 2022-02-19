@@ -1,12 +1,4 @@
-/** CLICKHOUSE URL Engine handler */
-/**
-  CREATE TABLE url_engine_node
-  (
-    `key` String,
-    `value` UInt64
-  )
-  ENGINE = URL('http://127.0.0.1:3123/', JSONEachRow)
-*/
+/** CLICKHOUSE URL Table Engine handler */
 
 const fastify = require('fastify')({ logger: true })
 var memory = [];
@@ -60,7 +52,6 @@ fastify.addContentTypeParser('*', {},
   async function (req, body, done) {
     return await genericJSONParser(req)
 })
-
 
 /** RUN URL Engine */
 const start = async () => {
