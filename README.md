@@ -12,7 +12,7 @@ npm start
 
 #### Clickhouse
 Create a URL Engine table pointed at our service:
-```
+```sql
 CREATE TABLE url_engine_node
 (
     `key` String,
@@ -22,11 +22,11 @@ ENGINE = URL('http://127.0.0.1:3123/', JSONEachRow)
 ```
  
  ##### INSERT
- ```
+ ```sql
  INSERT INTO url_engine_node VALUES ('hello',1), ('world', 2)
  ```
  ##### SELECT
- ```
+ ```sql
 SELECT * FROM url_engine_node
 
 Query id: d65b429e-76aa-49f3-b376-ebd3fbc9cd1a
