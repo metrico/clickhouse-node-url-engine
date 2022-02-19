@@ -27,8 +27,7 @@ ENGINE = URL('http://127.0.0.1:3123/', JSONEachRow)
  ```
  ##### SELECT
  ```
-SELECT *
-FROM url_engine_node
+SELECT * FROM url_engine_node
 
 Query id: d65b429e-76aa-49f3-b376-ebd3fbc9cd1a
 
