@@ -10,7 +10,7 @@ npm install
 npm start
 ```
 
-#### Clickhouse
+#### 📦 Clickhouse
 Create a URL Engine table pointed at our service:
 ```sql
 CREATE TABLE url_engine_node
@@ -21,11 +21,11 @@ CREATE TABLE url_engine_node
 ENGINE = URL('http://127.0.0.1:3123/', JSONEachRow)
 ```
  
- ##### INSERT
+ ##### ▶️ INSERT
  ```sql
  INSERT INTO url_engine_node VALUES ('hello',1), ('world', 2)
  ```
- ##### SELECT
+ ##### ◀️ SELECT
  ```sql
 SELECT * FROM url_engine_node
 
