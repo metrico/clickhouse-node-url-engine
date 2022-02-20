@@ -3,6 +3,11 @@
 # ClickHouse NodeJS URL Engine
 This basic example illustrates a simple NodeJS [URL Table Engine](https://clickhouse.com/docs/en/engines/table-engines/special/url/) server for Clickhouse
 
+##### ⏱️ Why
+> Clickhouse is super fast and already has all the functions one could dream. What is this for?
+
+This example is designed to understand the underlying formats and unleash imagination for integrators.
+
 ##### Features
 - [x] INSERT to JS array
 - [x] SELECT from JS array
