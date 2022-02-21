@@ -8,6 +8,21 @@ This basic example illustrates a simple NodeJS [URL Table Engine](https://clickh
 
 This example is designed to understand the underlying formats and unleash imagination for integrators.
 
+```mermaid
+sequenceDiagram
+    autonumber
+    ClickHouse->>NodeJS: POST Request
+    loop Javascript
+        NodeJS->>NodeJS: INSERT
+    end
+    NodeJS-->>ClickHouse: POST Response
+    ClickHouse->>NodeJS: GET Request
+    loop Javascript
+        NodeJS->>NodeJS: SELECT
+    end
+    NodeJS-->>ClickHouse: GET Response
+```
+
 ##### Features
 - [x] INSERT to JS array
 - [x] SELECT from JS array
